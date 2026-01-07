@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srećan rođendan Tarooo</title>
+    <title>happy birthday btw</title>
     <style>
-      /* Body stil sa animacijom pozadine */
+      /* Body with moving gradient background */
       body {
         margin: 0;
         font-family: Arial, sans-serif;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         overflow: hidden;
         text-align: center;
         background: linear-gradient(270deg, #001f3f, #0074D9, #00aaff, #001f3f);
@@ -26,7 +27,7 @@
         100% {background-position:0% 50%;}
       }
 
-      /* Link stil */
+      /* Fade-in text and link */
       a {
         font-size: 6vw;
         font-weight: bold;
@@ -57,7 +58,7 @@
         }
       }
 
-      /* Baloni odozdo nagore */
+      /* Rising balloons */
       .balloon {
         position: absolute;
         bottom: -50px;
@@ -71,15 +72,31 @@
           transform: translateY(-110vh) rotate(360deg);
         }
       }
+
+      /* Top image */
+      .birthday-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 4px solid white;
+        margin-bottom: 20px;
+      }
     </style>
   </head>
   <body>
-    <!-- Tekst i link -->
-    <a href="https://open.spotify.com/playlist/5p9Qc3sSzEtqGpAKPMD4bO?si=a1446c15ef344001&pt=ff55d1a39cce8d8b970e6694cd47d357">
-      srecan rodjendann taroo <3 <br> klikni mee
+    <!-- Top image -->
+    <img src="https://raw.githubusercontent.com/RickGrimesLOL/party4u-site/main/images%20(1).jpg" 
+         alt="Rođendanska slika" 
+         class="birthday-image">
+
+    <!-- Text + Spotify link -->
+    <a href="https://open.spotify.com/playlist/YOUR_PLAYLIST_LINK">
+      srecan rodjendann taroo<br>
+      klikni mee
     </a>
 
-    <!-- Baloni -->
+    <!-- Rising balloons -->
     <div class="balloon" style="left: 10%;">🎈</div>
     <div class="balloon" style="left: 50%; animation-delay: 1s;">🎈</div>
     <div class="balloon" style="left: 80%; animation-delay: 2s;">🎈</div>
